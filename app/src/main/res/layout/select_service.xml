@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_back"
+        app:layout_constraintEnd_toStartOf="@id/logo">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="76dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/subtitle_select_services"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout" />
+
+    <TextView
+        android:id="@+id/txt_recommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_recommended"
+        android:textColor="@color/primary"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_recommended"
+        app:layout_constraintBottom_toTopOf="@id/bottom_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/service_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Color Coded Bags -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/service_color_coded_bags_selector"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_color_coded_bags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@drawable/colorcode"
+                        android:text="@string/service_color_coded_bags"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_color_coded_bags"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Dry Clean -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_dry_clean_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_dry_clean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_dry_clean"
+                        android:drawableStart="@drawable/dry_cleaning"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_dry_clean"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Stained Items -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_stained_items_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_stained_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_stained_items"
+                        android:drawableStart="@drawable/stained"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_stained_items"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Heavy & Large -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_heavy_large_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_heavy_large"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_heavy_large"
+                        android:drawableStart="@drawable/heavy"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_heavy_large"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Regular Wear -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_regular_wear_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_regular_wear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_regular_wear"
+                        android:drawableStart="@drawable/regular_wear"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_regular_wear"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Delicates -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_delicates_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_delicates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_delicates"
+                        android:drawableStart="@drawable/delicates"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_delicates"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Darks & Colors -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_darks_colors_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_darks_colors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_darks_colors"
+                        android:drawableStart="@drawable/darks"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_darks_colors"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <!-- Whites & Cleans -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/service_whites_cleans_selector"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_whites_cleans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_whites_cleans"
+                        android:drawableStart="@drawable/whites"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_whites_cleans"
+                        android:textColor="@color/black"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txt_learn_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_learn_more"
+            android:textColor="@color/primary"/>
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_proceed"
+            android:textColor="@android:color/white"
+            android:background="@color/dark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/screen_title"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

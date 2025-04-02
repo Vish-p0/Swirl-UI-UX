@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="primary">#FF1B4F83</color>
+    <color name="background">#FFDBE3F7</color>
+    <color name="dark">#FF1C0082</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_background">#FFD9D9D9</color>
+    <color name="dark_grey">#FF393737</color>
+    <color name="service_dry_clean">#FFE74C3C</color>
+    <color name="service_stain">#FFF39C12</color>
+    <color name="service_heavy">#FFF1CA0F</color>
+    <color name="service_regular">#FF27AE60</color>
+    <color name="service_delicates">#FF0683D5</color>
+    <color name="service_darks">#FF4B0082</color>
+    <color name="service_whites">#FFFFFFFF</color>
+    <color name="service_color_coded_bags">#FFCCCB</color>
+</resources>
