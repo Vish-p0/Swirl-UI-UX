@@ -23,7 +23,7 @@ Fresh, Fast, Flawless – SWIRL! 🌀
 To get the Swirl project, run the following command in your terminal:
 ```bash
 git clone https://github.com/Vish-p0/Swirl-UI-UX.git
-
+```
 ## 🚀 How to Get This Project
 ### **Step 2: Open in Android Studio**
 1. Open **Android Studio**.
