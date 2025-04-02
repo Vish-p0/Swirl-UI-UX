@@ -38,9 +38,6 @@ git clone https://github.com/Vish-p0/Swirl-UI-UX.git
 ## 🛠 Technologies Used
 - **Language:** Java/Kotlin
 - **IDE:** Android Studio
-- **Database:** Firebase / SQLite (if applicable)
-- **Maps & Tracking:** Google Maps API
-- **Payment Gateway:** (If applicable, mention Stripe, PayPal, etc.)
 
 ---
 
