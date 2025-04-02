@@ -14,7 +14,6 @@
 - **Customer Feedback & Support** – Rate services and get quick assistance.
 
 
-
 Fresh, Fast, Flawless – SWIRL! 🌀
 ---
 
@@ -24,7 +23,7 @@ To get the Swirl project, run the following command in your terminal:
 ```bash
 git clone https://github.com/Vish-p0/Swirl-UI-UX.git
 ```
-## 🚀 How to Get This Project
+
 ### **Step 2: Open in Android Studio**
 1. Open **Android Studio**.
 2. Click **File > Open** and select the cloned project folder.
@@ -53,10 +52,10 @@ For any queries, feel free to reach out:
 ---
 
 ## 🌟 Why Choose SWIRL?
-✔ **Convenience** – We come to you instead of you visiting the laundromat.
-✔ **Transparency** – No hidden charges.
-✔ **Quality Service** – Expert laundromats ensure excellent cleaning.
-✔ **Membership Rewards** – Get exclusive offers and earn rewards.
-✔ **Secure Payments** – Safe and hassle-free transactions.
+- ✔ **Convenience** – We come to you instead of you visiting the laundromat.
+- ✔ **Transparency** – No hidden charges.
+- ✔ **Quality Service** – Expert laundromats ensure excellent cleaning.
+- ✔ **Membership Rewards** – Get exclusive offers and earn rewards.
+- ✔ **Secure Payments** – Safe and hassle-free transactions.
 
 Fresh, Fast, Flawless – **SWIRL**! 🌀
