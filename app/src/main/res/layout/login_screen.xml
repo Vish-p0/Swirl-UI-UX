@@ -118,6 +118,7 @@
                 android:text="@string/continue_text"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
+                app:backgroundTint="@color/primary"
                 android:textSize="18sp" />
 
             <LinearLayout
@@ -150,8 +151,8 @@
 
             <Button
                 android:id="@+id/apple_signin"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_width="355dp"
+                android:layout_height="58dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rounded_gray_button"
                 android:drawableStart="@drawable/apple"
@@ -162,12 +163,13 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:backgroundTint="@color/grey_background" />
 
             <Button
                 android:id="@+id/google_signin"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_width="357dp"
+                android:layout_height="62dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rounded_gray_button"
                 android:drawableStart="@drawable/google"
@@ -178,12 +180,13 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:backgroundTint="@color/grey_background" />
 
             <Button
                 android:id="@+id/email_signin"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rounded_gray_button"
                 android:drawableStart="@drawable/email"
@@ -194,14 +197,15 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:backgroundTint="@color/grey_background" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/terms_message"
-                android:textColor="@color/dark_grey"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="12sp" />
 
         </LinearLayout>

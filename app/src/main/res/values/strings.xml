@@ -152,7 +152,7 @@ clean!</string>
     <string name="btn_learn_more">Learn more</string>
     <string name="btn_proceed">Proceed</string>
     <string name="subtitle_select_services">Select required services from below</string>
-
     <string name="set">Set Pick up Location</string>
     <string name="pickup">Pickup: Your location</string>
+
 </resources>
